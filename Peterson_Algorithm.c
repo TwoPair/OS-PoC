@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 // gcc .\Peterson_Algorithm.c -o .\Peterson_Algorithm -lpthread
 //
 //
@@ -14,34 +13,17 @@
 
 #include <pthread.h>
 #include <stdio.h>
-=======
-//       The Peterson's Algorithm
-// 
-// It's an algorithm for solving CSP(Critical-Section Problem).
-// Feature:
-//   - theoretically perfect solution
-//   - that provides mutual exclusion, progress(no deadlock), and bounded waiting(no starvation)
-//   - BUT, it's not feasible to implement in practice,
-//   - if you create code the same as the algorithm.
-
-#include <stdio.h>
-#include <pthread.h>
->>>>>>> master
 
 #define true 1
 #define false 0
 
-<<<<<<< HEAD
 #define SIZE 100000
 
-=======
->>>>>>> master
 int sum = 0;
 
 int turn;
 int flag[2];
 
-<<<<<<< HEAD
 void* producer(void*);
 void* consumer(void*);
 
@@ -90,13 +72,4 @@ void* consumer(void* param) {
     /* remainder section */
   }
   pthread_exit(0);
-=======
-int main() {
-    pthread_t tid1, tid2;
-    pthread_create(&tid1, NULL, producer, NULL);
-    pthread_create(&tid2, NULL, consumer, NULL);
-    pthread_join(tid1, NULL);
-    pthread_join(tid2, NULL);
-    printf("sum = %d\n", sum);
->>>>>>> master
 }
