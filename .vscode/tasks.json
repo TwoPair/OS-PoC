@@ -1,0 +1,25 @@
+{
+    "tasks": [
+        {
+            "label": "C Build",
+            "type": "shell",
+            "command": "C:\\MinGW\\bin\\g++.exe",
+            "args": [
+                "-o",
+                "${fileBasenameNoExtension}",
+                "${fileBasename}"
+            ],
+            // "options": {
+            //     "cwd": "C:\\MinGW\\bin"
+            // },
+            // "problemMatcher": [
+            //     "$gcc"
+            // ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ],
+    "version": "2.0.0"
+}
