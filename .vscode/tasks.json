@@ -6,7 +6,7 @@
             "command": "C:\\MinGW\\bin\\g++.exe",
             "args": [
                 "-o",
-                "${fileBasenameNoExtension}",
+                "a.exe",
                 "${fileBasename}"
             ],
             // "options": {

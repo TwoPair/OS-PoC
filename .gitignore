@@ -8,5 +8,5 @@
 # Local History for Visual Studio Code
 .history/
 
-# No upload exe files
+# No exe files allowed
 *.exe
