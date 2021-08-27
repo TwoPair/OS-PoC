@@ -1,4 +1,4 @@
-// gcc .\Peterson_Algorithm.c -o .\Peterson_Algorithm -lpthread
+// gcc .\Peterson_Algorithm.c -o .\Peterson_Algorithm -pthread
 //
 //
 //              [ The Peterson's Algorithm ]
@@ -24,8 +24,8 @@ int sum = 0;
 int turn;
 int flag[2];
 
-void* producer(void*);
-void* consumer(void*);
+void *producer(void *);
+void *consumer(void *);
 
 int main() {
   pthread_t tid1, tid2;
@@ -36,7 +36,7 @@ int main() {
   printf("sum = %d\n", sum);
 }
 
-void* producer(void* param) {
+void *producer(void *param) {
   for (int k = 0; k < SIZE; k++) {
     /* entry section */
     flag[0] = true;
@@ -55,7 +55,7 @@ void* producer(void* param) {
   pthread_exit(0);
 }
 
-void* consumer(void* param) {
+void *consumer(void *param) {
   for (int k = 0; k < SIZE; k++) {
     /* entry section */
     flag[1] = true;

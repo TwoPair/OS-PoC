@@ -7,7 +7,7 @@
 #include <pthread.h>
 #include <stdio.h>
 
-int sum = 0;  // a shared variable
+int sum = 0; // a shared variable
 
 pthread_mutex_t mutex;
 
@@ -26,15 +26,20 @@ int main() {
 void *counter(void *param) {
   for (int k = 0; k < 10000; k++) {
     /* entry section */
-    pthread_mutex_lock(&mutex);  // atomical function
+    pthread_mutex_lock(&mutex); // atomical function
 
     /* critical section */
     sum++;
 
     /* exit section */
-    pthread_mutex_unlock(&mutex);  // atomical function
+    pthread_mutex_unlock(&mutex); // atomical function
 
     /* remainder section */
   }
   pthread_exit(0);
+}
+
+int main(int argc, char const *argv[]) {
+  /* code */
+  return 0;
 }
