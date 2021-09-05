@@ -1,8 +1,8 @@
 {
-    "C_Cpp.clang_format_fallbackStyle": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "C_Cpp.clang_format_fallbackStyle": "Google",
     "editor.formatOnSave": true,
     "editor.fontFamily": "Hack",
-    "C_Cpp.clang_format_style": "{BasedOnStyle: Google, IndentWidth: 4, ColumnLimit: 0}",
+    "C_Cpp.clang_format_style": "Google",
     "C_Cpp.default.intelliSenseMode": "gcc-x64",
     "code-runner.executorMap": {
         "javascript": "node",
@@ -64,5 +64,9 @@
     "C_Cpp.vcFormat.newLine.beforeOpenBrace.type": "sameLine",
     "C_Cpp.default.cppStandard": "c++17",
     "C_Cpp.default.cStandard": "c11",
-    "editor.defaultFormatter": "xaver.clang-format"
+    "editor.defaultFormatter": "xaver.clang-format",
+    "C_Cpp.clang_format_path": "C:\\Program Files\\LLVM\\bin\\clang-format.exe",
+    "clang-format.style": "Google",
+    "clang-format.fallbackStyle": "Google",
+    "clang-format.executable": "C:\\Program Files\\LLVM\\bin\\clang-format.exe"
 }
